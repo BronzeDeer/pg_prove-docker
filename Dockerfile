@@ -20,7 +20,7 @@ COPY --from=build /usr/local/bin/pg_prove /usr/local/bin/pg_prove
 #COPY --from=build /usr/share/perl5 /usr/share/perl5
 COPY --from=build /usr/local/share/perl5 /usr/local/share/perl5
 COPY --from=build /usr/share/postgresql/extension/*pgtap* /pgtap/
-COPY run.sh /run.sh
+COPY --chown=root:root run.sh /run.sh
 
 CMD [ "/run.sh" ]
 
