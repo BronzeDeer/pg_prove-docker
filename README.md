@@ -6,8 +6,8 @@ As long as your tests run inside transactions no trace of the tests should remai
 
 ## Usage
 
-Set 
-- $POSTGRES_HOST
+Set (as needed)
+- $POSTGRES_HOST (or mount the pgsql socket to /tmp/.s.PSGSQL.5432)
 - $POSTGRES_SUPERUSER (needed to install/remove pgTAP)
 - $POSTGRES_SUPERUSER_PASSWORD
 - $POSTGRES_TESTUSER (USER that will execute the tests)
