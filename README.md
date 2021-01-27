@@ -12,5 +12,6 @@ Set
 - $POSTGRES_SUPERUSER_PASSWORD
 - $POSTGRES_TESTUSER (USER that will execute the tests)
 - $POSTGRES_TESTUSER_PASSWORD
+- $POSTGRES_DBNAME
 
 Mount your tests to `/tests` inside the container 
